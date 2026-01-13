@@ -48,7 +48,10 @@ int paran(char a[size])
 				return 0;
 		}
 		else if(isalnum(a[i])||a[i]=='+'||a[i]=='-'||a[i]=='*'||a[i]=='/'||a[i]=='^')
+		{
+			i++;
 			continue;
+		}
 		i++;
 	}
 	if(s.top == -1)
